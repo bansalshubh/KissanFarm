@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmer Sell | Kissan Farm</title>
+    <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="../static/css2/style.css" />
     <link
       rel="stylesheet"
@@ -37,11 +38,11 @@
           <img src="../static/logo.png" >
       </div>
       <ul>
-          <li style="cursor:pointer" class="item"><a id="hom">Home</a></li>
-          <li style="cursor:pointer" class="item"><a id="serv">Services</a></li>
+        <li style="cursor:pointer" class="item"><a id="hom">Home</a></li>
+        <li style="cursor:pointer" class="item"><a id="serv">Services</a></li>
 
-          <li style="cursor:pointer" class="item"><a id="abo" style="width:104px">About us</a></li>
-          <li style="cursor:pointer" class="item"><a id="con" style="width:119px">Contact Us</a></li>
+        <li style="cursor:pointer" class="item"><a id="abo"  style="width:104px">About us</a></li>
+        <li style="cursor:pointer" class="item"><a id="con"  style="width:119px">Contact Us</a></li>
           <li class="item"><a href="/farmerBuy">Buy</a></li>
       </ul>
       <div class="cart" style="display: flex;width: 55%;justify-content: flex-end; flex-wrap: wrap;">
@@ -212,6 +213,23 @@
 
 
       </div>
-  
+      <script>
+        document.getElementById("serv").onclick = function()
+        {
+            window.location.href = "/#services-container";
+        }
+        document.getElementById("hom").onclick = function()
+        {
+            window.location.href = "/#home";
+        }
+        document.getElementById("abo").onclick = function()
+        {
+            window.location.href = "/#aboutus-section";
+        }
+        document.getElementById("con").onclick = function()
+        {
+            window.location.href = "/#contact";
+        }
+        </script>
   </body>
 </html>
